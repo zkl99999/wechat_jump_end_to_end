@@ -17,6 +17,7 @@ class CNNEncoder(nn.Module):
     """docstring for ClassName"""
     def __init__(self):
         super(CNNEncoder, self).__init__()
+        # 输入通道3 输出通道64
         self.layer1 = nn.Sequential(
                         nn.Conv2d(3,64,kernel_size=3,padding=0),
                         nn.BatchNorm2d(64, momentum=1, affine=True),
